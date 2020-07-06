@@ -1,0 +1,83 @@
+
+text{
+	
+	
+	}
+
+
+
+#div1{
+	position:absolute;
+	top:50px;
+
+	background:#399;
+	animation: rise 5s;
+	}
+	
+
+#div2{
+	margin:20px;
+	background-color:#00C;
+	transform: rotate(30deg);
+	animation: zhuan 5s  ease-in infinite;
+
+	}
+	@keyframes zhuan{
+		0% {transform: rotateX(0deg) rotateY(0deg) rotate(0deg)}
+		25% {transform:  rotateX(90deg) rotateY(90deg)rotate(90deg)}
+		50% {transform: rotateX(180deg) rotateY(180deg)rotate(180deg)}
+		100% {transform:rotateX(360deg)rotateY(360deg)rotate(360deg)}
+		}
+#div3{
+	margin-left:30px;
+	background-color:#6F6;
+	 animation: sway 10s ease-in-out infinite;
+  opacity: .55;
+}
+@keyframes sway{
+  0% {transform:  rotate(-15deg); }
+  17% {transform:  rotate(25deg); }
+  34% {transform:  rotate(-20deg); }
+  50% {transform:  rotate(15deg); }
+  67% {t9ransform:  rotate(-25deg); }
+  84% {transform:  rotate(15deg); }
+  100% {transform:  rotate(-15deg); }
+}
+
+div{
+width:200px;
+height:150px;
+  border :2px solid blue;
+
+
+	/*
+	
+		animation: rise 3s cubic-bezier(0.19, 1, 0.22, 1) .25s forwards;
+animation-name: rise;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 2s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-play-state: running;
+	    
+	*/
+	}
+@keyframes rise{
+/*
+from {background: red;}
+to {background: yellow;}
+*/
+0%   {background: red; left:0px; padding-top:0px;margin:200px;}
+25%  {background: yellow; left:200px; padding-top:100px;margin:100px;;}
+50%  {background: blue; left:200px; padding-top:200px;margin:0000px;}
+75%  {background: green; left:0px; padding-top:100px;margin:100px;}
+100% {background: red; left:0px; padding-top:0px;margin:200px;}
+
+	
+	/*
+  0% {opacity: 0;transform: translate3d(0,100%,0);}
+  50% {opacity: 1;}
+  100% {opacity: 1;transform: translate3d(0,4500rpx,0);}
+  */
+}
